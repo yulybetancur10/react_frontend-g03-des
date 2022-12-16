@@ -1,7 +1,11 @@
 import React from "react";
+import { Container } from "react-bootstrap";
+
 
 function HomePage(){
     return(
-        <h1>Home Page</h1>    
+        <Container>
+            <h1>Home Page</h1>                
+        </Container>
     )
 } export{HomePage}

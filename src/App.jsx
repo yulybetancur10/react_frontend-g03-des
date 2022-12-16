@@ -1,4 +1,6 @@
 import { HashRouter, Route, Routes } from "react-router-dom"
+import { BlogPage } from "./components/BlogPage"
+import { BlogPost } from "./components/BlogPost"
 import { ContactPage } from "./components/ContactPage"
 import { HomePage } from "./components/HomePage"
 import { MenuNav } from "./components/MenuNav"
@@ -14,6 +16,8 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage/>}/>
           <Route path="/contacto" element={<ContactPage/>}/>
+          <Route path="/blog" element={<BlogPage/>}/>
+          <Route path="/blog/:id" element={<BlogPost/>}/>
           <Route path="*" element={<NotFound/>}/>
         </Routes>
       </HashRouter>
